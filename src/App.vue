@@ -1,6 +1,7 @@
 <template>
   <div class="container">
   <Header title="Task Tracker" />
+  <Tasks :tasks="tasks" />
 </div>
 </template>
 
@@ -20,7 +21,7 @@ export default {
     }
   }, 
   created(){
-    this.task = [
+    this.tasks = [
       {
         id: 1,
         text: 'Doctors Appointment',
