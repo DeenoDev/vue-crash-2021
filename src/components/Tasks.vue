@@ -1,5 +1,5 @@
 <template>
-    <div :key="task.id" v-for="task in tasks">
+    <div :key="tasks.id" v-for="task in tasks">
        <Task :tasks="task" />
     </div>
 
