@@ -1,7 +1,7 @@
 <template>
     <div class="task">
-        <h3>{{ task.text }}</h3>
-        
+        <!-- <h3>{{ tasks.text }}</h3> -->
+        <!-- <p>{{ tasks.day }}</p> -->
     </div>
 </template>
 
@@ -9,8 +9,8 @@
 export default {
     name: 'Task',
     props: {
-        task: ObjectS
-    }
+        task: Object,
+    },
 }
 
 </script>
