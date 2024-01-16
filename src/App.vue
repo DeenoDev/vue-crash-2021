@@ -22,7 +22,7 @@ export default {
   }, 
   methods: {
     deleteTask(id){
-      this.tasks = this.tasks.filter((task) => task.id !==id)
+      this.tasks = this.tasks.filter((task) => task.id !==id);
     },
   },
   created(){
