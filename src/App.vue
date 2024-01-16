@@ -22,7 +22,7 @@ export default {
   }, 
   methods: {
     deleteTask(id){
-      console.log('tasks', id);
+      this.tasks = this.tasks.filter((task) => task.id !==id)
     },
   },
   created(){

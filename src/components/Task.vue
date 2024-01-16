@@ -18,6 +18,7 @@ export default {
           this.$emit('delete-task', id)
         },
     },
+    
 }
 
 </script>
