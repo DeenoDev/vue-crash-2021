@@ -23,13 +23,15 @@ export default {
   methods: {
     deleteTask(id){
       if (confirm('Are you sure?')){
-        this.tasks = this.tasks.filter((task) => task.id !==id);
+        this.tasks = this.tasks.filter((task) => task.id !== id);
       }
     },
     toggleReminder(id){
-      console.log(id);
+      this.task = this.task.map((task) => 
+      task.id === id ? {...task, reminder: !task.
+      reminder} : task )
 
-    }
+    },
   },
   created(){
     this.tasks = [
