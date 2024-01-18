@@ -25,6 +25,13 @@
 <script>
  export default {
     name: 'AddTask',
+    data(){
+        return{
+            text: '',
+            day: '',
+            reminder: '',
+        }
+    }
  }
 </script>
 
