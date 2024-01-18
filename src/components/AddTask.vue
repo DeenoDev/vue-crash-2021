@@ -31,6 +31,21 @@
             day: '',
             reminder: '',
         }
+    },
+    methods: {
+        onSubmit(e){
+            e.preventDefault() 
+
+                if(!this.text){
+                    alert('Please add a task')
+                    return
+
+            }
+
+            const newTask = {
+                id: Math.floor(Math.random() * 100000)
+            }
+        }
     }
  }
 </script>
