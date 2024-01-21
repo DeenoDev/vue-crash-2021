@@ -1,7 +1,7 @@
 <template>
   <div class="container">
   <Header title="Task Tracker" />
-  <AddTask />
+  <AddTask @add-task="addTask"/>
   <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
 </div>
 </template>
