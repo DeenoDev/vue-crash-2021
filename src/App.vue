@@ -24,8 +24,8 @@ export default {
     }
   }, 
   methods: {
-    addTask(){
-      this.tasks = [...tasks, task]
+    addTask(task){
+      this.tasks = [...this.tasks, task]
 
     },
     deleteTask(id){
