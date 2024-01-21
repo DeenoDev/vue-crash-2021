@@ -14,6 +14,7 @@ export default {
     name: 'Header',
     props: {
         title: String,
+        showAddTask: Boolean
     },
     components: {
         Button
