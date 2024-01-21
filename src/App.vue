@@ -24,6 +24,10 @@ export default {
     }
   }, 
   methods: {
+    addTask(){
+      this.tasks = [...tasks, task]
+
+    },
     deleteTask(id){
       if (confirm('Are you sure?')){
         this.tasks = this.tasks.filter((task) => task.id !== id);
