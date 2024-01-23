@@ -45,6 +45,9 @@ export default {
       reminder} : task )
 
     },
+    async fetchTasks(){
+
+    }
   },
   created(){
     this.tasks = [
