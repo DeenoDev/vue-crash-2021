@@ -53,7 +53,8 @@ export default {
         return data
     }
   },
-  created(){
+  async created(){
+    this.tasks = await this.fetchTasks();
   },
 }
 </script>
