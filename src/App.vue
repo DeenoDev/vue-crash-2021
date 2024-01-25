@@ -39,7 +39,9 @@ export default {
         }
       })
 
-      this.tasks = [...this.tasks, task]
+      const data = await res.json()
+
+      this.tasks = [...this.tasks, data]
 
     },
     deleteTask(id){
