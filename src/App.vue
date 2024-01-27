@@ -72,10 +72,11 @@ export default {
         body: JSON.stringify(updTask)
        })
 
+       const data = await res.json()
+
 
       this.task = this.task.map((task) => 
-      task.id === id ? {...task, reminder: !task.
-      reminder} : task )
+      task.id === id ? {...task, reminder: data.reminder } : task )
 
     },
     async fetchTasks(){
