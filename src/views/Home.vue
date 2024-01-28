@@ -6,16 +6,18 @@
 </template>
 
 <script>
-  import Tasks from './components/Tasks';
-  import AddTask from './components/AddTask';
+  import Tasks from '../components/Tasks';
+  import AddTask from '../components/AddTask';
   export default {
     name: 'Home',
     components: {
         Tasks,
-        AddTask
+        AddTask,
     },
-    data: {
-        tasks: []
+    data(){
+        return {
+            tasks: [],
+        }
     },
     methods: {
     
