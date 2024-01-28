@@ -1,4 +1,11 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import About from '../views/About'
 
-const 
+const routes = [
+    {
+        path: '/about',
+        name: 'about',
+        component: About
+    }
+    
+]
