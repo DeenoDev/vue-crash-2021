@@ -1,32 +1,35 @@
 <template>
   <div class="container">
-  <Header @toggle-add-task="toggleAddTask"  title="Task Tracker" :showAddTask="showAddTask" />
-  <router-view :showAddTask="showAddTask"></router-view>
-</div>
-<Footer />
+    <Header
+      @toggle-add-task="toggleAddTask"
+      title="Task Tracker"
+      :showAddTask="showAddTask"
+    />
+    <router-view :showAddTask="showAddTask"></router-view>
+    <Footer />
+  </div>
 </template>
 
 <script>
-import Header from './components/Header';
-import Footer from './components/Footer';
-
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    Footer,
   },
-  data(){
-    return{
+  data() {
+    return {
       showAddTask: false,
     }
-  }, 
+  },
   methods: {
-    toggleAddTask(){
+    toggleAddTask() {
       this.showAddTask = !this.showAddTask
-    }
-}
+    },
+  },
 }
 </script>
 
